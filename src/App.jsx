@@ -45,24 +45,27 @@ function App() {
       schema: rowCount.map((schemaValue) => ({ [schemaValue]: schemaOptions.find((option) => option.value === schemaValue).label }))
     };
   
+    console.log(segmentData);
     try {
       const response = await fetch('https://webhook.site/4646f2ef-9ef5-45a3-8ce6-8357840b8559', {
         method: 'POST',
         headers: {
+          'Api-Key': "4646f2ef-9ef5-45a3-8ce6-8357840b8559",
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(segmentData),
       });
-  
+    
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-  
+    
       const responseData = await response.json();
       console.log('Webhook response:', responseData);
     } catch (error) {
       console.error('Error sending data to webhook:', error.message);
     }
+    
   };
   
   
