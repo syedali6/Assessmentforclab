@@ -93,7 +93,7 @@ function App() {
         </div>
         <div>
           <div className='h-100'>
-            <Button variant="outline-secondary" onClick={handleShow}>Secondary</Button>
+            <Button variant="outline-secondary" onClick={handleShow}>Save Segmnet</Button>
           </div>
         </div>
 
@@ -114,8 +114,9 @@ function App() {
             <div className='p-3'>
               <Form>
                 <div>
-                  <Form.Label htmlFor="segmentname">Enter the Name of the Segment</Form.Label>
+                  <Form.Label htmlFor="segmentname" className='fw-bold'>Enter the Name of the Segment</Form.Label>
                   <Form.Control
+                  className='my-3'
                     type="text"
                     id="segmentname"
                     placeholder='Name of the segment'
@@ -124,7 +125,7 @@ function App() {
                   />
                 </div>
                 <div>
-                  <p>To save your segment, you need to add the Schemas to build the query</p>
+                  <p className='fw-bold'>To save your segment, you need to add the Schemas to build the query</p>
                 </div>
                 <div>
                   <div className='d-flex justify-content-end gap-2 p-3'>
@@ -195,8 +196,7 @@ function App() {
                       </Col>
                       <Col lg={2} md={2} sm={2}>
                         <Button
-                          className='bgcolor'
-                          
+                          className='bgcolor '
                         >
                           <TiMinus color='#6c8098' size={25} />
                         </Button>
