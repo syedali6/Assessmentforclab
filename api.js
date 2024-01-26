@@ -11,7 +11,7 @@ async function getData(apiKey, tokenId) {
 
   try {
     const response = await axios.get(`https://webhook.site/token/${tokenId}/requests`, {
-        method: 'POST',
+    method: 'POST',
       params: {
         query: dateQuery,
       },
