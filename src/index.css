@@ -1,0 +1,24 @@
+.offcanvas{
+    width: 560px !important;
+}
+
+.bgcolorset{
+    background-color: #39aebc;
+}
+
+.bgcolor{
+    background-color: #f2fbf9;
+}
+
+.bottomset{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+.borderset{
+    border: 1px solid blue;
+}
